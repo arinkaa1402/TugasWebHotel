@@ -1,0 +1,102 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama untuk form login */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling untuk heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling untuk label */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Styling untuk input text dan password */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Efek saat input difokuskan */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #a7daa9;
+    outline: none;
+}
+
+/* Styling untuk tombol submit */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #c07eda;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efek hover pada tombol submit */
+input[type="submit"]:hover {
+    background-color: #dfaee9;
+}
+
+/* Styling untuk pesan error */
+p {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
